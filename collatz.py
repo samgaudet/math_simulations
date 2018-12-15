@@ -32,5 +32,3 @@ for i in range(2,n):
 	# add starting value, number of steps until j = 1 to dataframe
 
 	df = df.append(pd.DataFrame({'initialValue': i, 'stepCount': stepCount}, index=[0]), ignore_index=True)
-
-df.plot.scatter(x='initialValue', y='stepCount')
